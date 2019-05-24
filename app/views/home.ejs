@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th scope="col">N°</th>
+            <th scope="col">Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%for(key in usuarios){%>
+            <tr>
+                <th scope="row"><%= usuarios[key].id %></th>
+                <td><%= usuarios[key].nome %></td>
+            </tr>
+            <%}%>
+        </tbody>
+    </table>
+</body>
+</html>

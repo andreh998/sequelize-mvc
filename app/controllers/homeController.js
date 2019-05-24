@@ -4,7 +4,7 @@ module.exports.index = function(application, req, res){
 
     Usuario.findAll()
     .then(result => {
-        res.json(result);
+        res.render('home', {usuarios: result})
     })
     .catch(err => {
         console.log(err);
